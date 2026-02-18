@@ -23,6 +23,9 @@ button{
 button:active{
     scale: 0.95;
 }
+    body{
+    overflow: hidden;
+}
 main{
     height: 100%;
     width: 100%;
@@ -30,5 +33,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    
+
 }
