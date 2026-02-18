@@ -43,12 +43,13 @@ var main = document.querySelector('main');
 btn.addEventListener('click',function(){
 
 
-    var x = Math.random()*100;
-    var y = Math.random()*100;
+    var x = Math.random()*80;
+    var y = Math.random()*80;
     var c1 = Math.floor(Math.random()*256);
     var c2 = Math.floor(Math.random()*256);
     var c3 = Math.floor(Math.random()*256);
     var r = Math.floor(Math.random()*360);
+    var scl = Math.random()*4;
 
 
 
@@ -59,6 +60,7 @@ btn.addEventListener('click',function(){
     div.style.left = x+"%";
     div.style.top = y+"%";
     div.style.rotate = r+"deg";
+    div.style.scale = scl;
     div.style.width = "50px";
     div.style.backgroundColor = `rgb(${c1},${c2},${c3})`;
     main.appendChild(div);
